@@ -17,7 +17,6 @@ export class ListComponent implements OnInit {
 
     this.resultService.getPosts().subscribe(
       (data: Posts) => {
-        debugger;
         this.posts = data 
       }
     );

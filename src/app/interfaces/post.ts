@@ -1,16 +1,19 @@
 export interface Posts {
-    modhash: string;
-    dist: number;
-    children: Post[]
-    data: string
+    kind: string;
+    data: {
+        children:Post[];
+    }
 
 }
 
 export interface Post {
-    //children: post[] 
-    title: string;
-    permalink: string;
-    thumbnail: string;
+    kind: string;
+    data: {
+        title: string;
+        thumbnail: string;
+        permalink: string;
+    }
 }
+
 
 
